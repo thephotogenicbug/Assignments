@@ -24,6 +24,8 @@
     #suitecase{
       color:#00008b;
     }
+  
+    
 </style>
 </head>
 <body class="pt-5">
@@ -82,49 +84,45 @@
 <!--nav end -->
 <!-- new activity start  -->
 <br/><br/>
-   <div class="container">
-       <div class="row">
-           <div class="col-lg-3"></div>
-           <div class="col-lg-6 mt-3">
-               <h4 class="text-center">New Employee</h4>
-               <div class="form-group">
-                   <h5>Emp Name</h5>
-                   <input type="text" class="form-control"/>
-               </div>
+ <div class="container mt-3">
+     <div class="row ">
+       
+         <div class="col-md-7   text-center text-info">
+             <h3>Today Payment : 0</h3>
+            </div>
+       
+                <div class="col-md-5">
+                <input class="form-control" type="text" placeholder="Search here by name, mobile, father name, class" aria-label="Search here by name, mobile, father name, class">
+              </div>
+               
+              <table class="table table-lg table-bordered mt-2 ">
+                <tr  class="bg-light">
+                  <th>#Id</th>
+                  <th>Name</th>
+                  <th>Total Amount</th>
+                  <th>Mode</th>
+                  <th>Father</th>
+                  <th>Mobile</th>
+                  <th>Purpose</th>
+                  <th>Class</th>
+                  <th>Date</th>
+                </tr>
 
-               <div class="form-group">
-                   <h5>Emp Mobile</h5>
-                   <input type="text" class="form-control"/>
-               </div>
+                <tr style="background-color:#dff0d8">
+                    <td colspan="2" class="text-right  font-weight-bold">Total Collection :</td>
+                    <td colspan="2" class="font-weight-bold"  >Rs .0</td>
+                    <td colspan="3" class="font-weight-bold">Today Total Due: Rs.0</td>
+                    <td colspan="2" class="font-weight-bold"> Discount : Rs .0</td>
+                </tr>
+               <tr style="background-color:#d9edf7">
+                   <td colspan="2" class="text-right font-weight-bold">Available Amount :</td>
+                   <td colspan="7" class=" font-weight-bold">Rs .0</td>
+               </tr>
 
-               <div class="form-group">
-                   <h5>Emp Email</h5>
-                   <input type="text" class="form-control"/>
-               </div>
-
-               <div class="form-group">
-                   <h5>Emp Salary</h5>
-                   <input type="text" class="form-control"/>
-               </div>
-
-               <div class="form-group">
-                   <h5>Emp Dept</h5>
-                   <input type="text" class="form-control"/>
-               </div>
-
-               <div class="form-group">
-                   <h5>Emp Joining Date</h5>
-                   <input type="text" class="form-control" placeholder="mm/dd/yyy"/>
-               </div>
-
-               <div class="text-center">
-                   <button class="btn btn-primary text-white">Save Employee</button>
-                   <button class="btn btn-danger text-white">Close</button>
-               </div>
-           </div>
-           <div class="col-md-3"></div>
-       </div>
-   </div>
+              </table>
+     </div>
+ </div>
+   
 <br/><br/>
 <!-- new activity end  -->
 </body>
