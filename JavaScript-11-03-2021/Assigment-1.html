@@ -1,0 +1,52 @@
+<html>
+  <head>
+   <script>
+            var item = [];
+			
+			one = () =>{
+			 var data = "";
+			 item.map((xitem , index)=>{
+			  data = data + "<p>" + xitem + "</p>";
+			 })
+			  document.getElementById("list").innerHTML=data;
+			}
+			
+			save = () =>{
+			//alert("ok");
+			var name = document.getElementById("newitem").value;
+			if(name !==""){
+			item.push(name);
+			one();
+			document.getElementById("newitem").value="";
+			
+			}
+		
+			}
+   </script>
+   <style>
+      p{
+	    float:left;
+		width:28.33%;
+		text-align:center;
+		margin:1%;
+		padding:1%;
+	  }
+	  
+	  div{
+	    margin:30px;
+	  }
+   </style>
+  </head>
+  <body>
+    <center>
+	 <h1>Assigment 1</h1>
+	 
+	  <div>
+	   <input type="text" id="newitem"/>
+	   <button onclick="save()">Save</button>
+	  </div>
+	  
+	  <div id="list"></div>
+	</center>
+  </body>
+</html>
