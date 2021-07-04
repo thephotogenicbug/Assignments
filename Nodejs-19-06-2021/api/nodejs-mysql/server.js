@@ -36,6 +36,18 @@ app.post("/saveproject", function(req, res){
         res.end()
     })
 })
+app.post("/saveactivity", function(req, res){
+    var name = req.body.name;
+    var mobile = req.body.startdate;
+    var email = req.body.enddate;
+    var address = req.body.address;
+    var sql = "insert into activitylist(name, mobile, email, address) values('"+name+"', '"+mobile+"', '"+email+"', '"+address+"')";
+    mydatabase.query(sql, (error, rows, fields)=>{
+        if(error) throw error
+        res.send("Project Details Received Successfully !");
+        res.end()
+    })
+})
 
 
 

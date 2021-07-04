@@ -55,7 +55,7 @@ class Project extends Component{
 
     render(){
         return(
-            <div className="container mt-5">
+            <div className="container mt-5 pt-5">
                 <div className="row">
                    <div className="col-md-12 text-center">
                     <h2>New Project</h2>      
